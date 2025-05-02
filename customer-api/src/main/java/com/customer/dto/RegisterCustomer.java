@@ -15,7 +15,7 @@ public class RegisterCustomer {
 
     @NotEmpty(message = "Name is required.")
     @Pattern(
-            regexp = "^[a-zA-Z]{2,20}$",
+            regexp = "^[a-zA-Z ]{2,20}$",
             message = "Name must only contain letters and be between 2 and 20 characters.")
     private String name;
 
